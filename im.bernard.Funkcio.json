@@ -30,8 +30,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/wbernard/funkcio.git",
-                    "tag" : "v0.2",
-                    "commit" : "2b0c8d862ca36f68cc64a337790bcf852ded02af"
+                    "tag" : "v0.2.1",
+                    "commit" : "5b462f03dd12995126d91784b68fd10ce42611d8"
                 }
             ]
         }
