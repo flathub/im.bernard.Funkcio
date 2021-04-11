@@ -1,7 +1,7 @@
 {
     "app-id" : "im.bernard.Funkcio",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.38",
+    "runtime-version" : "40",
     "sdk" : "org.gnome.Sdk",
     "command" : "funkcio",
     "finish-args" : [
@@ -30,8 +30,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/wbernard/funkcio.git",
-                    "tag" : "v0.2.1",
-                    "commit" : "5b462f03dd12995126d91784b68fd10ce42611d8"
+                    "tag" : "v0.3",
+                    "commit" : "6e06814c76f6a20ce02ebea431ef6c564ccec96f"
                 }
             ]
         }
