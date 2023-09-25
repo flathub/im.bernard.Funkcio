@@ -1,7 +1,7 @@
 {
     "app-id" : "im.bernard.Funkcio",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "42",
+    "runtime-version" : "45",
     "sdk" : "org.gnome.Sdk",
     "command" : "funkcio",
     "finish-args" : [
@@ -21,7 +21,52 @@
         "*.a"
     ],
     "modules" : [
-    	"python3-flatpak-requirements.json",
+        {
+            "name": "lapack",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DCMAKE_INSTALL_LIBDIR=lib",
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DBUILD_SHARED_LIBS=ON",
+                "-DBUILD_TESTING=OFF",
+                "-DLAPACKE=ON",
+                "-DCBLAS=ON"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/Reference-LAPACK/lapack.git",
+                    "tag": "v3.11.0",
+                    "commit": "7866626840f5d5e7e27f027a55182da8b3303872"
+                }
+            ],
+            "cleanup": [ "/lib/cmake" ]
+        },
+        {
+            "name": "openblas",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DBUILD_SHARED_LIBS=ON",
+                "-DBUILD_TESTING=OFF",
+                "-DNO_AFFINITY=ON",
+                "-DUSE_OPENMP=1",
+                "-DNO_WARMUP=1",
+                "-DCORE=CORE2",
+                "-DNUM_THREADS=64",
+                "-DDYNAMIC_ARCH=ON"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/xianyi/OpenBLAS/archive/v0.3.24.tar.gz",
+                    "sha256": "ceadc5065da97bd92404cac7254da66cc6eb192679cf1002098688978d4d5132"
+                }
+            ],
+            "cleanup": [ "/lib/cmake" ]
+        },
+        "python3-flatpak-requirements.json",
         {
             "name" : "funkcio",
             "builddir" : true,
