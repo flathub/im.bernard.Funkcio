@@ -70,7 +70,7 @@
                     "sha256": "33cdd02a6453380dd71cc70357ce388ad1ee8d32bd0e38fc22b273d050aa29b3"
                 }
             ],
-            "cleanup": ['*']
+            "cleanup": ["*"]
         },
         {
             "name": "python3-pythran",
@@ -105,7 +105,7 @@
                     "sha256": "5a8e9f316a77bfdcdfb81308dbf9bc046638a80ba64a8a608d62c14d67f19704"
                 }
             ],
-            "cleanup": ['*']
+            "cleanup": ["*"]
         },
         {
             "name": "python3-meson-python",
