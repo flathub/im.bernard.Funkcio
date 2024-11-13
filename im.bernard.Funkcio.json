@@ -77,6 +77,10 @@
                     "url" : "https://github.com/wbernard/funkcio.git",
                     "tag" : "v0.3",
                     "commit" : "6e06814c76f6a20ce02ebea431ef6c564ccec96f"
+                },
+                {
+                    "type" : "patch",
+                    "path" : "fix-appdata.patch"
                 }
             ]
         }

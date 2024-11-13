@@ -1,0 +1,32 @@
+From 1c85eecdc90fc2acd497fc6e1524a665fea97077 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Wed, 13 Nov 2024 16:57:31 +0300
+Subject: [PATCH] Fix appdata papercuts
+
+---
+ data/im.bernard.Funkcio.appdata.xml.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/data/im.bernard.Funkcio.appdata.xml.in b/data/im.bernard.Funkcio.appdata.xml.in
+index c0dd82a..589764d 100644
+--- a/data/im.bernard.Funkcio.appdata.xml.in
++++ b/data/im.bernard.Funkcio.appdata.xml.in
+@@ -3,7 +3,6 @@
+     <id>im.bernard.Funkcio</id>
+     <metadata_license>CC0-1.0</metadata_license>
+     <project_license>GPL-3.0-or-later</project_license>
+-    <project_group>GNOME</project_group>
+     <launchable type="desktop-id">im.bernard.Funkcio.desktop</launchable>
+     <name>Funkcio</name>
+     <summary>Draw functions from points</summary>
+@@ -49,6 +48,7 @@
+     </releases>
+     <url type="homepage">https://github.com/wbernard/funkcio</url>
+     <url type="bugtracker">https://github.com/wbernard/funkcio/issues</url>
++    <url type="vcs-browser">https://github.com/wbernard/funkcio</url>
+     <content_rating type="oars-1.1" />
+     <translation type="gettext">funkcio</translation>
+     <developer_name>Walter Bernard</developer_name>
+--
+libgit2 1.7.2
+
