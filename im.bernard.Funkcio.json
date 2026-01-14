@@ -1,7 +1,7 @@
 {
     "app-id" : "im.bernard.Funkcio",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "47",
+    "runtime-version" : "49",
     "sdk" : "org.gnome.Sdk",
     "command" : "funkcio",
     "finish-args" : [
@@ -37,8 +37,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Reference-LAPACK/lapack.git",
-                    "tag": "v3.11.0",
-                    "commit": "7866626840f5d5e7e27f027a55182da8b3303872"
+                    "tag": "v3.12.1",
+                    "commit": "6ec7f2bc4ecf4c4a93496aa2fa519575bc0e39ca"
                 }
             ],
             "cleanup": [ "/lib/cmake" ]
@@ -60,13 +60,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/xianyi/OpenBLAS/archive/v0.3.24.tar.gz",
-                    "sha256": "ceadc5065da97bd92404cac7254da66cc6eb192679cf1002098688978d4d5132"
+                    "url": "https://github.com/xianyi/OpenBLAS/archive/v0.3.30.tar.gz",
+                    "sha256": "27342cff518646afb4c2b976d809102e368957974c250a25ccc965e53063c95d"
                 }
             ],
             "cleanup": [ "/lib/cmake" ]
         },
-        "python3-flatpak-requirements.json",
+        "python3-modules.json",
         {
             "name" : "funkcio",
             "builddir" : true,
