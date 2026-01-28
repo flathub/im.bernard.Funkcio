@@ -1,0 +1,9 @@
+flit-core
+meson-python
+tomli
+pyproject-metadata
+numpy>=1.16.0
+pybind11
+pythran
+setuptools-scm
+scipy
